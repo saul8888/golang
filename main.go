@@ -14,10 +14,6 @@ import (
 type DB struct {
 	collection *mongo.Collection
 }
-type getProductRequest struct {
-	Limit  int
-	Offset int
-}
 
 type Product struct {
 	ID primitive.ObjectID `bson:"_id" json:"id,omitempty"`
@@ -69,4 +65,16 @@ func respondwithJSON(w http.ResponseWriter, code int, payload interface{}) {
 	w.Write(response)
 }
 
+*/
+
+/*
+	hola := primitive.NewObjectID()
+	fmt.Printf("%T", hola)
+	fmt.Println()
+	fmt.Println(hola)
+	//i, err := strconv.Atoi(hola)
+	pro := hola.String()
+	fmt.Printf("%T", pro)
+	fmt.Println()
+	fmt.Println(pro)
 */
